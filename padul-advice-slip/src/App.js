@@ -54,13 +54,15 @@ export default class App extends Component {
                   <span role="img" aria-label="emoji">
                     ✨
                   </span>
-                  collections of slips
+                  Random collections of slips
                   <span role="img" aria-label="emoji">
                     ✨
                   </span>
                   ~
                 </h1>
-                <h1 className="subtitle">Read these, I know you need it.</h1>
+                <h1 className="subtitle">
+                  Read these, I know you need it. <br />( refresh this page to get random advices )
+                </h1>
               </div>
               {this.state.slips.length ? (
                 this.state.slips.map((data, index) => (
