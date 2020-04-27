@@ -1,12 +1,10 @@
+# 01-Class-Component
+
+## Docs
+
+  - Build with **React.js** ⚛️
+  - More features until further notice
+
 <div align="center">
-  <h1>
-   🤩 Welcome to Padul Advice Slip! 🤓
-  </h1>
+  <h2>💻 This is a <i>development branch</i>, docs will be updated soon 🖥</h2>
 </div>
-
-## Notifications 🤗
-
- -  Please refer to specific _**Branches**_ to get features list.
- -  `master` has nothing to do with ( _will not push here until further notice_ )
-
-## Thank you! 😉
