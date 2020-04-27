@@ -1,17 +1,12 @@
-# Padul Advice Slip 🧾 📝 🤓
+<div align="center">
+  <h1>
+   🤩 Welcome to Padul Advice Slip! 🤓
+  </h1>
+</div>
 
-## Description
+## Notifications 🤗
 
- For the longest time, people needs some advice whether is 2 books  
- or just 1 line.  
+ -  Please refer to specific _**Branches**_ to get features list.
+ -  `master` has nothing to do with ( _will not push here until further notice_ )
 
- And here it is 😉
-
-## Features
-
-  - Build with React ⚛️
-
-## Docs
-
-  - TBA. ⏳
-
+## Thank you! 😉
