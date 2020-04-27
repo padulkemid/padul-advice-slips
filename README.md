@@ -9,6 +9,15 @@
   - Build with **React.js** ⚛️
   - _Advice Slips_ came from [here!](https://api.adviceslip.com/), Thank you very much 🤩
 
+## Contributing 🤜🏼🤛🏼
+
+  1. Clone this repo.
+  2. Check to this branch ( _that would be **01-class-components**_ ).
+  3. Goto `padul-advice-slip` folder.
+  4. Do `npm install` to get all depedencies.
+  5. Start doing any changes.
+  6. To start the _server_ run `npm run start`.
+
 ---
 
 <div align="center">
