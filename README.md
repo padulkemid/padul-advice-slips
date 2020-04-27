@@ -1,10 +1,16 @@
-# 01-Class-Component
+<div align="center">
+  <h1>
+   🤩 Welcome to Padul Advice Slip! 🤓
+  </h1>
+</div>
 
-## Docs
+## Docs 📝 📕
 
   - Build with **React.js** ⚛️
-  - More features until further notice
+  - _Advice Slips_ came from [here!](https://api.adviceslip.com/), Thank you very much 🤩
+
+---
 
 <div align="center">
-  <h2>💻 This is a <i>development branch</i>, docs will be updated soon 🖥</h2>
+  <h3>💻 This is a <i>development branch</i>, docs will be updated soon 🖥</h3>
 </div>
