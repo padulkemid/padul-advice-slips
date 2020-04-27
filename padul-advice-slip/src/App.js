@@ -34,7 +34,7 @@ export default class App extends Component {
     const slipUrl = 'https://api.adviceslip.com/advice';
     let promiseArray = [];
 
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 4; i++) {
       promiseArray.push(fetch(slipUrl).then((res) => res.json()));
     }
 
