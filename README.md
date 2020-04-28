@@ -7,6 +7,7 @@
 ## Docs 📝 📕
 
   - Build with **React.js** ⚛️
+  - Shhhh, it comes with _Hooks_ already! 🤫
   - _Advice Slips_ came from [here!](https://api.adviceslip.com/), Thank you very much 🤩
 
 ## Contributing 🤜🏼🤛🏼
