@@ -82,16 +82,6 @@ const DisplaySlipsDetail = (props) => {
                 </header>
                 <section className="modal-card-body has-text-black">
                   When you turn back, slips are gonna be randomized again, <br />
-                  To get back, you could use the <i>slip's</i>
-                  <b className="is-family-monospace">&nbsp;id&nbsp;</b>and use it on the address
-                  bar. <br />
-                  For example{' '}
-                  <b className="is-family-monospace">
-                    &nbsp;https://localhost:3000/slips/
-                    <i className="has-text-danger">[YOUR_ID_HERE]</i>
-                  </b>
-                  <br />
-                  Or just press back on the browser. 🤣 <br />
                   To cancel, click the button on top of right corner, or button below.
                 </section>
                 <footer className="modal-card-foot">
