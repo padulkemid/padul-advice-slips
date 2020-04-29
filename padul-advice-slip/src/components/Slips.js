@@ -1,16 +1,30 @@
 import React from 'react';
+
+import { Link } from 'react-router-dom';
+
 import '../css/Slips.css';
 
 const Slips = (props) => {
+  const { advice, slipId } = props;
+
   return (
     <article className="message is-info padul-message">
       <div className="message-header">
         <p>Slip</p>
 
         {/* right side */}
-        <p>Id : {props.slipId}</p>
+        <p>Id : {slipId}</p>
       </div>
-      <div className="message-body">{props.advice}</div>
+      <div className="message-body">
+        {advice}
+        <div className="buttons is-right">
+          <Link to={`/slip/${slipId}`} style={{ textDecoration: 'none' }}>
+            <button type="button" className="button is-outlined is-info">
+              Learn More!
+            </button>
+          </Link>
+        </div>
+      </div>
     </article>
   );
 };

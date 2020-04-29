@@ -39,7 +39,7 @@ const Home = () => {
             ))
           ) : (
             <progress
-              className="progress is-large is-black"
+              className="progress is-large is-warning"
               max="100"
               style={{ width: '50%', margin: '0 25%' }}>
               50%
