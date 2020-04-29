@@ -8,6 +8,7 @@
 
   - Build with **React.js** ⚛️
   - Shhhh, it comes with _Hooks_ already! 🤫
+  - Wow we're using a famous _Reducer_ and that is [React Redux!](https://react-redux.js.org/) 🥳
   - _Advice Slips_ came from [here!](https://api.adviceslip.com/), Thank you very much 🤩
 
 ## Routes
