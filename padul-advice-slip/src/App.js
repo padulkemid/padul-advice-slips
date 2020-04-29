@@ -1,18 +1,20 @@
 import React from 'react';
 
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import { HomePage } from './pages';
 
 import 'bulma/css/bulma.css';
 
 const App = () => {
   return (
-    <>
-      <Navbar />
-      <Home />
-      <Footer />
-    </>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <HomePage />
+        </Route>
+      </Switch>
+    </Router>
   );
 };
 

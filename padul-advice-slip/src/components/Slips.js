@@ -3,7 +3,7 @@ import '../css/Slips.css';
 
 const Slips = (props) => {
   return (
-    <article className="message is-black padul-message">
+    <article className="message is-info padul-message">
       <div className="message-header">
         <p>Slip</p>
 

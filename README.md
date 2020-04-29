@@ -10,6 +10,22 @@
   - Shhhh, it comes with _Hooks_ already! 🤫
   - _Advice Slips_ came from [here!](https://api.adviceslip.com/), Thank you very much 🤩
 
+## Routes
+
+### List of Available Routes
+
+  - _**Base URL**_ => /slips/:id 
+      ```javascript
+      // Get slips based on id to open its details
+
+      {
+        slips: {
+          advice: <strings_of_advices>
+          id: <slip_id>
+        }
+      }
+      ```
+
 ## Contributing 🤜🏼🤛🏼
 
   1. Clone this repo.

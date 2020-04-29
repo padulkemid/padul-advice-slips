@@ -1,7 +1,6 @@
 import React from 'react';
 
-import Input from '../components/Input';
-import Slips from '../components/Slips';
+import { Input, Slips } from './';
 
 import useAdviceSlip from '../hooks/useAdviceSlip';
 
