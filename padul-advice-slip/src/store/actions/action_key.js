@@ -1,0 +1,4 @@
+const SET_FAV = 'SET_FAVORITES';
+const DEL_FAV = 'DELETE_FAVORITES';
+
+export { SET_FAV, DEL_FAV };

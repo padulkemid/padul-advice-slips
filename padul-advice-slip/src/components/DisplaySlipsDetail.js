@@ -1,12 +1,28 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+
+import { addFavorites } from '../store/actions/favorite_actions';
+import { Notification } from './';
+import '../css/Modal.css';
 
 const DisplaySlipsDetail = (props) => {
   const { slipId, slipAdvice } = props;
   const [modal, setModal] = useState(false);
+  const dispatch = useDispatch();
 
   const handleBack = () => {
     setModal(!modal);
+  };
+
+  const addToFav = () => {
+    const struct = {
+      slipId,
+      slipAdvice,
+    };
+
+    Notification('Success adding new favorites!', 'success');
+    dispatch(addFavorites(struct));
   };
 
   return (
@@ -19,8 +35,8 @@ const DisplaySlipsDetail = (props) => {
             Read carefully.
           </h2>
 
-          <article class="message" style={{ margin: '0 15%' }}>
-            <div class="message-body">
+          <article className="message" style={{ margin: '0 15%' }}>
+            <div className="message-body">
               <b>This slip's id are : </b>
               <br />
               <i>
@@ -44,7 +60,7 @@ const DisplaySlipsDetail = (props) => {
           </article>
 
           <div className="buttons is-centered">
-            <button className="button is-info is-inverted is-outlined">
+            <button onClick={addToFav} className="button is-info is-inverted is-outlined">
               Star &nbsp;
               <span role="img" aria-label="emoji">
                 ⭐️
@@ -57,7 +73,7 @@ const DisplaySlipsDetail = (props) => {
               </span>
             </button>
 
-            <div className={modal ? 'modal is-active' : 'modal'}>
+            <div className={modal ? 'modal is-active padul-opacity' : 'modal'}>
               <div className="modal-background"></div>
               <div className="modal-card">
                 <header className="modal-card-head">

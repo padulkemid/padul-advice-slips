@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { Input, Slips } from './';
-
 import useAdviceSlip from '../hooks/useAdviceSlip';
 
 const Home = () => {
@@ -24,7 +24,17 @@ const Home = () => {
               ~
             </h1>
             <h1 className="subtitle">
-              Read these, I know you need it. <br />( try to input new values below )
+              Read these, I know you need it. <br />
+              To see your favorite slip, click below. <br />
+              &darr; <br />
+              <Link to="/favorites">
+                <button className="button is-outlined is-warning">
+                  Favorites&nbsp;
+                  <span role="img" aria-label="emoji">
+                    🤩
+                  </span>
+                </button>
+              </Link>
             </h1>
             <Input handleChange={handleChange} />
             <h1 className="subtitle">
