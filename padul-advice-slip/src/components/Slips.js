@@ -20,7 +20,7 @@ const Slips = (props) => {
         <div className="buttons is-right">
           <Link to={`/slip/${slipId}`} style={{ textDecoration: 'none' }}>
             <button type="button" className="button is-outlined is-info">
-              Learn More!
+              Details
             </button>
           </Link>
         </div>
