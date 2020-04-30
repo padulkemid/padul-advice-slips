@@ -1,18 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 
 import { Navbar, Footer, DisplaySlipsDetail } from '../components';
-
-import useSingleSlip from '../hooks/useSingleSlip';
+import { setAdvices } from '../store/actions/advice_actions';
 
 const SlipsDetail = () => {
   const { slipId } = useParams();
-  const [slip] = useSingleSlip(slipId);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(setAdvices(slipId));
+  }, [slipId, dispatch]);
 
   return (
     <>
       <Navbar />
-      <DisplaySlipsDetail slipId={slipId} slipAdvice={slip.advice} />
+      <DisplaySlipsDetail />
       <Footer />
     </>
   );

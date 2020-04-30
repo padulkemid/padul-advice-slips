@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 
 import { addFavorites } from '../store/actions/favorite_actions';
 import { Notification } from './';
 import '../css/Modal.css';
 
-const DisplaySlipsDetail = (props) => {
-  const { slipId, slipAdvice } = props;
+const DisplaySlipsDetail = () => {
+  const { slipId, slipAdvice } = useSelector((state) => state.adviceReducer);
+  const { favorites } = useSelector((state) => state.favoriteReducer);
   const [modal, setModal] = useState(false);
   const dispatch = useDispatch();
 
@@ -16,13 +17,25 @@ const DisplaySlipsDetail = (props) => {
   };
 
   const addToFav = () => {
+    let isAlreadyAdded = false;
     const struct = {
       slipId,
       slipAdvice,
     };
 
-    Notification('Success adding new favorites!', 'success');
-    dispatch(addFavorites(struct));
+    for (let i = 0; i < favorites.length; i++) {
+      const favId = favorites[i].slipId;
+      if (favId === slipId) {
+        Notification(`You're already added this as favorite slip!`, 'error');
+        isAlreadyAdded = true;
+        break;
+      }
+    }
+
+    if (!isAlreadyAdded) {
+      Notification('Success adding new favorites!', 'success');
+      dispatch(addFavorites(struct));
+    }
   };
 
   return (

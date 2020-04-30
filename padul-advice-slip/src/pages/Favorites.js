@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { Navbar, Footer, Slips } from '../components';
 
 const Favorites = () => {
-  const { favorites } = useSelector((state) => state);
+  const { favorites } = useSelector((state) => state.favoriteReducer);
   return (
     <>
       <Navbar />
