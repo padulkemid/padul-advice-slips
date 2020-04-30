@@ -12,7 +12,11 @@
   - API is fetched by using [Redux Thunk!](https://github.com/reduxjs/redux-thunk)
   - _Advice Slips_ came from [here!](https://api.adviceslip.com/), Thank you very much 🤩
 
-## Routes
+## Deployed Link
+
+  - [Here it goes!](https://padul-advice-slips.web.app/) ⭐️
+
+## Routes 🛣
 
 ### List of Available Routes
 
