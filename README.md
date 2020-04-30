@@ -13,7 +13,7 @@
 ## Contributing 🤜🏼🤛🏼
 
   1. Clone this repo.
-  2. Check to this branch ( _that would be **01-class-components**_ ).
+  2. Check to this branch ( _that would be **02-hooks**_ ).
   3. Goto `padul-advice-slip` folder.
   4. Do `npm install` to get all depedencies.
   5. Start doing any changes.
