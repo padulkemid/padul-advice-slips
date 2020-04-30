@@ -4,9 +4,45 @@
   </h1>
 </div>
 
-## Notifications 🤗
+## Docs 📝 📕
 
- -  Please refer to specific _**Branches**_ to get features list.
- -  `master` has nothing to do with ( _will not push here until further notice_ )
+  - Build with **React.js** ⚛️
+  - Shhhh, it comes with _Hooks_ already! 🤫
+  - Wow we're using a famous _Reducer_ and that is [React Redux!](https://react-redux.js.org/) 🥳
+  - API is fetched by using [Redux Thunk!](https://github.com/reduxjs/redux-thunk)
+  - _Advice Slips_ came from [here!](https://api.adviceslip.com/), Thank you very much 🤩
 
-## Thank you! 😉
+## Deployed Link
+
+  - [Here it goes!](https://padul-advice-slips.web.app/) ⭐️
+
+## Routes 🛣
+
+### List of Available Routes
+
+  - _**Base URL**_ => /slips/:id 
+      ```javascript
+      // Get slips based on id to open its details
+
+      {
+        slips: {
+          advice: <strings_of_advices>
+          id: <slip_id>
+        }
+      }
+      ```
+
+## Contributing 🤜🏼🤛🏼
+
+  1. Clone this repo.
+  2. Check to this branch ( _that would be **01-class-components**_ ).
+  3. Goto `padul-advice-slip` folder.
+  4. Do `npm install` to get all depedencies.
+  5. Start doing any changes.
+  6. To start the _server_ run `npm run start`.
+
+---
+
+<div align="center">
+  <h3>💻 This is a <i>development branch</i>, docs will be updated soon 🖥</h3>
+</div>

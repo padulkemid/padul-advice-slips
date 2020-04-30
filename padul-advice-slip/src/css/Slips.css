@@ -1,0 +1,15 @@
+.buttons {
+  margin: 3%;
+}
+
+.padul-message {
+  margin: 2% 20%;
+  animation: fadeIn ease .5s;
+  border: 1px solid white;
+  box-shadow: 0 10px 25px black;
+}
+
+@keyframes fadeIn{
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
