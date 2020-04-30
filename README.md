@@ -41,8 +41,3 @@
   5. Start doing any changes.
   6. To start the _server_ run `npm run start`.
 
----
-
-<div align="center">
-  <h3>💻 This is a <i>development branch</i>, docs will be updated soon 🖥</h3>
-</div>
