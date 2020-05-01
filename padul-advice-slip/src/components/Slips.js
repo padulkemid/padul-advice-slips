@@ -18,7 +18,10 @@ const Slips = (props) => {
       <div className="message-body">
         {advice}
         <div className="buttons is-right">
-          <Link to={`/slip/${slipId}`} style={{ textDecoration: 'none' }}>
+          <Link
+            data-testid="slip-detail-button"
+            to={`/slip/${slipId}`}
+            style={{ textDecoration: 'none' }}>
             <button type="button" className="button is-outlined is-info">
               Details
             </button>

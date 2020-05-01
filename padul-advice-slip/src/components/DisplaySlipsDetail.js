@@ -39,7 +39,7 @@ const DisplaySlipsDetail = () => {
   };
 
   return (
-    <section className="hero is-black is-fullheight">
+    <section data-testid="slip-detail" className="hero is-black is-fullheight">
       <div className="hero-body">
         <div className="container has-text-centered">
           <h1 className="title">You want to learn the truth?</h1>
@@ -73,13 +73,19 @@ const DisplaySlipsDetail = () => {
           </article>
 
           <div className="buttons is-centered">
-            <button onClick={addToFav} className="button is-info is-inverted is-outlined">
+            <button
+              data-testid="add-to-fav"
+              onClick={addToFav}
+              className="button is-info is-inverted is-outlined">
               Star &nbsp;
               <span role="img" aria-label="emoji">
                 ⭐️
               </span>
             </button>
-            <button onClick={handleBack} className="button is-danger is-inverted is-outlined">
+            <button
+              data-testid="slip-back-button"
+              onClick={handleBack}
+              className="button is-danger is-inverted is-outlined">
               Back &nbsp;
               <span role="img" aria-label="emoji">
                 ⏮
@@ -98,7 +104,7 @@ const DisplaySlipsDetail = () => {
                   To cancel, click the button on top of right corner, or button below.
                 </section>
                 <footer className="modal-card-foot">
-                  <Link to="/" style={{ textDecoration: 'none' }}>
+                  <Link data-testid="slip-redirect-home" to="/" style={{ textDecoration: 'none' }}>
                     <button className="button is-info">Yes, I'm sure!</button>
                   </Link>
                   <button className="button is-danger" onClick={handleBack}>

@@ -13,7 +13,6 @@ const fetchAdvices = (id) => {
   return fetch(`${url}/${id}`)
     .then((res) => res.json())
     .then((slipDetail) => ({
-      type: SET_SLIP_DETAIL,
       slipAdvice: slipDetail.slip.advice,
       slipId: Number(id),
     }));

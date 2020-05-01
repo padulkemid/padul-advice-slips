@@ -8,7 +8,7 @@ const Home = () => {
   const [slips, handleChange] = useAdviceSlip();
 
   return (
-    <section className="hero is-info is-bold is-fullheight">
+    <section data-testid="render-home" className="hero is-info is-bold is-fullheight">
       <div className="hero-body">
         <div className="container">
           <div className="has-text-centered" style={{ marginBottom: '5%' }}>
@@ -27,7 +27,7 @@ const Home = () => {
               Read these, I know you need it. <br />
               To see your favorite slip, click below. <br />
               &darr; <br />
-              <Link to="/favorites">
+              <Link data-testid="redirect-fav-button" to="/favorites">
                 <button className="button is-outlined is-warning">
                   Favorites&nbsp;
                   <span role="img" aria-label="emoji">

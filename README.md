@@ -20,7 +20,7 @@
 
 ### List of Available Routes
 
-  - _**Base URL**_ => /slips/:id 
+  - _**Base URL**_ => /slip/:id 
       ```javascript
       // Get slips based on id to open its details
 

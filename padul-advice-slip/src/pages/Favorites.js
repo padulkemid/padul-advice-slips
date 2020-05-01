@@ -8,7 +8,7 @@ const Favorites = () => {
   return (
     <>
       <Navbar />
-      <section className="hero is-warning is-fullheight">
+      <section data-testid="render-fav" className="hero is-warning is-fullheight">
         <div className="hero-body">
           <div className="container has-text-centered">
             <h1 className="title">- your favorite slips -</h1>
